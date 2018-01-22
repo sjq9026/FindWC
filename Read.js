@@ -9,9 +9,13 @@ import {
   Platform,
   StyleSheet,
   Text,
+<<<<<<< HEAD
   View,
     Dimensions,
     Image
+=======
+  View
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -25,6 +29,7 @@ export default class Read extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+<<<<<<< HEAD
           {/*这个是searchlayout的布局*/}
         <View style={styles.searchLayout}>
           <View style={styles.input}>
@@ -32,6 +37,11 @@ export default class Read extends Component<{}> {
             <Text style={styles.hintStr}>请输入关键字</Text>
           </View>
         </View>
+=======
+        <Text style={styles.welcome}>
+          Welcome to React Native!阅读
+        </Text>
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 
       </View>
     );
@@ -41,7 +51,13 @@ export default class Read extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+<<<<<<< HEAD
       flexDirection:'column',
+=======
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
   },
   welcome: {
     fontSize: 20,
@@ -53,6 +69,7 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+<<<<<<< HEAD
     searchLayout:{
         flexDirection:'column',
         height:50,
@@ -77,4 +94,6 @@ const styles = StyleSheet.create({
         textAlign:'center',
         color:'gray'
     },
+=======
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 });

@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import { AppRegistry,StyleSheet ,View,Image} from 'react-native';
 import App from './App';
 import {StackNavigator,TabNavigator} from 'react-navigation';
 import React from 'react';
+=======
+import { AppRegistry } from 'react-native';
+import App from './App';
+import {StackNavigator,TabNavigator} from 'react-navigation';
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 import Home from './Home';
 import Read from './Read';
 import Fun from './Fun';
 import Mine from './Mine';
 import Welcome from './Welcome';
 
+<<<<<<< HEAD
 const tabPages = TabNavigator(
     {
         Home:{
@@ -118,11 +125,30 @@ const tabPages = TabNavigator(
 
     }
 )
+=======
+const tabPages = TabNavigator({
+Home:{
+    screen:Home
+},
+Read:{
+    screen:Read
+},
+Fun:{
+    screen:Fun
+},
+Mine:{
+    screen:Mine
+}
+
+
+})
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 
 
 
 
 const pages = StackNavigator({
+<<<<<<< HEAD
     Welcome:{
         screen:Welcome
     },
@@ -152,6 +178,17 @@ const styles = StyleSheet.create({
         width: 20,
         height: 20,
     },
+=======
+Welcome:{
+    screen:Welcome
+},
+Tab:{
+    screen:tabPages   
+}
+
+
+
+>>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
 })
 
 
