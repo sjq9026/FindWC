@@ -28,11 +28,10 @@ export default class Home extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-<<<<<<< HEAD
+
        <TWebView url='http://192.168.0.174:8081/htmls/nearBy.html' style={styles.wvstyle}/>
-=======
-       <TWebView url='http://192.168.5.102:8081/htmls/nearBy.html' style={styles.wvstyle}/>
->>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
+
+
 
       </View>
     );
@@ -40,7 +39,7 @@ export default class Home extends Component<{}> {
 }
 
 const styles = StyleSheet.create({
-<<<<<<< HEAD
+
     container: {
       flex: 1,
       justifyContent: 'center',
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
     wvstyle:{
       width:width,
       height:300,
-=======
+
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -80,6 +79,6 @@ const styles = StyleSheet.create({
     wvstyle:{
     width:width,
         height:300,
->>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
+
     }
 });
