@@ -6,16 +6,12 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-
-  View,
-    Dimensions,
-    Image,
-
-  View
-
+      Platform,
+      StyleSheet,
+      Text,
+      Dimensions,
+      Image,
+      View
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -51,9 +47,7 @@ export default class Read extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-
-      flexDirection:'column',
-
+    flexDirection:'column',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',

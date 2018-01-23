@@ -41,44 +41,24 @@ export default class Home extends Component<{}> {
 const styles = StyleSheet.create({
 
     container: {
-      flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
     },
     welcome: {
-      fontSize: 20,
-      textAlign: 'center',
-      margin: 10,
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
     },
     instructions: {
-      textAlign: 'center',
-      color: '#333333',
-      marginBottom: 5,
+        textAlign: 'center',
+        color: '#333333',
+        marginBottom: 5,
     },
-    wvstyle:{
-      width:width,
-      height:300,
 
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-    wvstyle:{
-    width:width,
-        height:300,
 
-    }
+
+
+
 });

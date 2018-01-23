@@ -5,7 +5,6 @@ import {StackNavigator,TabNavigator} from 'react-navigation';
 import React from 'react';
 
 
-import {StackNavigator,TabNavigator} from 'react-navigation';
 
 import Home from './Home';
 import Read from './Read';
@@ -15,7 +14,7 @@ import Toppic from  './Toppic'
 import Welcome from './Welcome';
 
 
-const tabPages = TabNavigator(
+const tab = TabNavigator(
     {
         Home:{
             screen:Home,
@@ -179,15 +178,6 @@ const styles = StyleSheet.create({
         height: 20,
     },
 
-Welcome:{
-    screen:Welcome
-},
-Tab:{
-    screen:tabPages   
-},
-    Toppic:{
-        screen:Toppic
-    }
 
 
 

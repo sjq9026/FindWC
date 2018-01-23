@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @if "%DEBUG%" == "" @echo off
 @rem ##########################################################################
 @rem
@@ -180,4 +180,4 @@ exit /b 1
 if "%OS%"=="Windows_NT" endlocal
 
 :omega
->>>>>>> 8248eaf1d901b055c64d02b7c3eb8d8cb6f5eb3d
+

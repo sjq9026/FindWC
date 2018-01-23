@@ -6,16 +6,12 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-
-  View,
+    Platform,
+    StyleSheet,
+    Text,
     Dimensions,
     Image,
-
-  View
-
+    View
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -28,35 +24,12 @@ const instructions = Platform.select({
 export default class Toppic extends Component<{}> {
     constructor(props){
         super(props)
-        this.state({
-            data:this.props.data
-        })
     }
   render() {
-
     return (
-
-
-
         <View style={styles.container}>
+                <Text>11111</Text>
 
-
-                    <View>
-                        <Image  source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}/>
-
-                    </View>
-                <View>
-                    <Image  source={{uri: 'http://facebook.github.io/react/img/logo_og.png'}}/>
-
-                </View>
-
-
-
-
-
-
-
-</View>
 
       </View>
     );
