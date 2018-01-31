@@ -39,7 +39,7 @@ export default class Category extends Component<{}> {
             <Text style={styles.str}>互联网那些事儿</Text>
             <Text style={styles.str}>互联网那些事儿</Text>
             <Text style={styles.str}>互联网那些事儿</Text>
-            <Text style={styles.str}>互联网那些事儿</Text>
+            <Text style={styles.str}>互联网那些事儿aa</Text>
       </View>
     );
   }
