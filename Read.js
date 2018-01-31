@@ -11,8 +11,13 @@ import {
       Text,
       Dimensions,
       Image,
-      View
+      View,
+    ScrollView
 } from 'react-native';
+import Toppic from "./Toppic";
+import ToppicEntity from  "./Entities/ToppicEntity";
+import Recommend from "./Recommend";
+import Category from "./Category";
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -20,6 +25,11 @@ const instructions = Platform.select({
   android: 'Double tap R on your keyboard to reload,\n' +
     'Shake or press menu button for dev menu',
 });
+
+const  toppics = [
+    new ToppicEntity("http://img0.imgtn.bdimg.com/it/u=3519309645,3088241677&fm=27&gp=0.jpg"),
+    new ToppicEntity("http://img4.imgtn.bdimg.com/it/u=876215035,4104840121&fm=27&gp=0.jpg")
+]
 
 export default class Read extends Component<{}> {
   render() {
@@ -33,10 +43,27 @@ export default class Read extends Component<{}> {
             <Text style={styles.hintStr}>请输入关键字</Text>
           </View>
         </View>
+        <ScrollView >
+            <Text style={styles.topStr}>推荐专题</Text>
+            <Toppic style={{height:100}}/>
+            <Text style={styles.topMore}>查看同期专题>></Text>
+            <View style={styles.line}></View>
+            <Recommend/>
+            <Category/>
+            <Text style={styles.topMore}>查看全部>></Text>
+            <Text style={styles.topMore}>查看全部>></Text>
+            <Text style={styles.topMore}>查看全部>></Text>
+            <Text style={styles.topMore}>查看全部>></Text>
+            <Text style={styles.topMore}>查看全部>></Text>
+            <Text style={styles.topMore}>查看全部>></Text>
+        </ScrollView>
 
-        <Text style={styles.welcome}>
-          Welcome to React Native!阅读
-        </Text>
+
+
+
+
+
+
 
 
       </View>
@@ -46,18 +73,8 @@ export default class Read extends Component<{}> {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    flexDirection:'column',
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+  },
 
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
   instructions: {
     textAlign: 'center',
     color: '#333333',
@@ -65,11 +82,10 @@ const styles = StyleSheet.create({
   },
 
     searchLayout:{
-        flexDirection:'column',
         height:50,
         width:Dimensions.get('window').width,
-        alignSelf:'center',
-        justifyContent:'center'
+        alignSelf:'flex-start',
+        justifyContent:'center',
     },
     input:{
         flexDirection:'row',
@@ -87,6 +103,23 @@ const styles = StyleSheet.create({
         lineHeight:40,
         textAlign:'center',
         color:'gray'
+    },
+    topStr:{
+      paddingTop:5,
+      paddingBottom:5,
+      marginLeft:10,
+      color:'black'
+    },
+    topMore:{
+        paddingTop:5,
+        paddingBottom:5,
+        marginLeft:10,
+        fontSize:12
+    },
+    line:{
+      height:1,
+      width:Dimensions.get('window').width,
+      backgroundColor:'black'
     },
 
 });

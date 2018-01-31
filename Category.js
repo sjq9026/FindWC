@@ -28,18 +28,18 @@ const  toppics = [
     new ToppicEntity("http://img4.imgtn.bdimg.com/it/u=876215035,4104840121&fm=27&gp=0.jpg")
 ]
 
-export default class Toppic extends Component<{}> {
+export default class Category extends Component<{}> {
     constructor(props){
         super(props);
-      /*  this.state={
-            data:this.props.tops,
-        }*/
     }
   render() {
+
     return (
         <View style={styles.container} >
-                <Image  style={styles.img} source={require("./imgs/3519309645.jpg")}/>
-                <Image  style={styles.img} source={require("./imgs/876215035.jpg")}/>
+            <Text style={styles.str}>互联网那些事儿</Text>
+            <Text style={styles.str}>互联网那些事儿</Text>
+            <Text style={styles.str}>互联网那些事儿</Text>
+            <Text style={styles.str}>互联网那些事儿</Text>
       </View>
     );
   }
@@ -48,17 +48,22 @@ export default class Toppic extends Component<{}> {
 const styles = StyleSheet.create({
       container: {
          width:width,
-          height:100,
-          flexDirection:'row',
-          justifyContent:'space-around'
+         marginTop:20,
+         flexDirection:'row',
+         justifyContent:'space-around',
+         flexWrap:'wrap',
       },
-      img:{
-          height:100,
-          width:(width-30)/2,
-          borderRadius:10,
-          borderWidth:1,
-          borderColor:'blue',
-      },
+    str:{
+        width:(Dimensions.get('window').width-30)/2,
+        textAlign:'center',
+        height:60,
+        borderWidth:1,
+        margin:5,
+        borderColor:'red',
+        lineHeight:60,
+        borderRadius:5
+    }
+
 
 
 

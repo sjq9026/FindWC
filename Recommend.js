@@ -28,7 +28,7 @@ const  toppics = [
     new ToppicEntity("http://img4.imgtn.bdimg.com/it/u=876215035,4104840121&fm=27&gp=0.jpg")
 ]
 
-export default class Toppic extends Component<{}> {
+export default class Recommend extends Component<{}> {
     constructor(props){
         super(props);
       /*  this.state={
@@ -36,10 +36,20 @@ export default class Toppic extends Component<{}> {
         }*/
     }
   render() {
+        let views = [];
+        for(let i=0;i<8;i++){
+views.push(
+    <View>
+        <Image  style={styles.img} source={require("./imgs/3519309645.jpg")}/>
+        <Text numberOfLines={2} style={styles.hintstr}>这里是图片的简介这里是图片的简介这里是图片的简介这里是图片的简介</Text>
+    </View>
+
+
+)
+        }
     return (
         <View style={styles.container} >
-                <Image  style={styles.img} source={require("./imgs/3519309645.jpg")}/>
-                <Image  style={styles.img} source={require("./imgs/876215035.jpg")}/>
+            {views}
       </View>
     );
   }
@@ -48,17 +58,23 @@ export default class Toppic extends Component<{}> {
 const styles = StyleSheet.create({
       container: {
          width:width,
-          height:100,
-          flexDirection:'row',
-          justifyContent:'space-around'
+
+         flexDirection:'row',
+         justifyContent:'space-around',
+         flexWrap:'wrap',
       },
       img:{
           height:100,
-          width:(width-30)/2,
+          width:(width-30)/4,
           borderRadius:10,
           borderWidth:1,
           borderColor:'blue',
       },
+    hintstr:{
+        width:(width-30)/4,
+        marginTop:5,
+        marginBottom:5
+    }
 
 
 

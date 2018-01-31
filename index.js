@@ -105,7 +105,6 @@ const tab = TabNavigator(
         swipeEnabled: true,
         backBehavior: 'none',
         tabBarOptions: {
-
             activeTintColor: 'blue',
             inactiveTintColor: 'gray',
             showIcon:true,//是否显示图标
@@ -152,7 +151,7 @@ const pages = StackNavigator({
         screen:Welcome
     },
     Tab:{
-        screen:tabPages
+        screen:tab
     }
 
 
@@ -186,4 +185,4 @@ const styles = StyleSheet.create({
 
 
 
-AppRegistry.registerComponent('RNDemo2', () => Toppic);
+AppRegistry.registerComponent('RNDemo2', () => pages);
