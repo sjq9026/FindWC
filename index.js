@@ -148,7 +148,10 @@ Mine:{
 const pages = StackNavigator({
 
     Welcome:{
-        screen:Welcome
+        screen:Welcome,
+        navigationOptions:{
+            header:null,
+        }
     },
     Tab:{
         screen:tab
